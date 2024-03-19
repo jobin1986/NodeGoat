@@ -39,7 +39,7 @@ jobs:
     # Username to connect to IQ Server for policy evaluation
         username: admin
     # Password to connect to IQ Server for policy evaluation
-        password: oyIPVhpYKELG
+        password: ${{ secrets.IQpassword }}
     # Determines the policy elements (policies, labels, and license threat groups) to associate with this build, and is managed via the Nexus IQ Server.
         applicationId: Nodegoat
     # Controls the stage the policy evaluation will be run against on the Nexus IQ Server.
