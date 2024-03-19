@@ -29,12 +29,10 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-
-    
     - name: Nexus IQ for GitHub Actions
   # You may pin to the exact commit or the version.
   # uses: sonatype-nexus-community/iq-github-action@ef2fae57de0888b50cedf3c9e1c2886bf3e5f21a
-    - uses: sonatype-nexus-community/iq-github-action@1.1.1
+      uses: sonatype-nexus-community/iq-github-action@1.1.1
       with:
     # Nexus IQ Server URL
         serverUrl: https://iq.jbernie.eu.ngrok.io/
