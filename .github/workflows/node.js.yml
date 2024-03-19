@@ -37,15 +37,15 @@ jobs:
     - uses: sonatype-nexus-community/iq-github-action@1.1.1
       with:
     # Nexus IQ Server URL
-      serverUrl: https://iq.jbernie.eu.ngrok.io/
+        serverUrl: https://iq.jbernie.eu.ngrok.io/
     # Username to connect to IQ Server for policy evaluation
-      username: admin
+        username: admin
     # Password to connect to IQ Server for policy evaluation
-      password: oyIPVhpYKELG
+        password: oyIPVhpYKELG
     # Determines the policy elements (policies, labels, and license threat groups) to associate with this build, and is managed via the Nexus IQ Server.
-      applicationId: Nodegoat
+        applicationId: Nodegoat
     # Controls the stage the policy evaluation will be run against on the Nexus IQ Server.
-      stage: # default is Build
+        stage: # default is Build
     # This is the path to a specific application archive file, a directory containing such archives or the ID of a Docker image. For archives, a number of formats are supported, including jar, war, ear, tar, tar.gz, zip and many others.
-      target: package-lock.json
+        target: package-lock.json
           
