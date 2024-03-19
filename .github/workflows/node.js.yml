@@ -43,7 +43,7 @@ jobs:
     # Determines the policy elements (policies, labels, and license threat groups) to associate with this build, and is managed via the Nexus IQ Server.
         applicationId: Nodegoat
     # Controls the stage the policy evaluation will be run against on the Nexus IQ Server.
-        stage: # default is Build
+        stage: Build
     # This is the path to a specific application archive file, a directory containing such archives or the ID of a Docker image. For archives, a number of formats are supported, including jar, war, ear, tar, tar.gz, zip and many others.
-        target: .
+        target: ./*/
           
